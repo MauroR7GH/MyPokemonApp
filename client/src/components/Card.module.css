@@ -1,0 +1,23 @@
+.div {
+    border-radius: 15px;
+    border: 2px solid #dc5050;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.name {
+    color: #dc5050;
+    height: 15px;
+    margin: 0px;
+}
+.img {
+    height: 155px;
+    width: 155px;
+}
+.types {
+    color: #dc5050;
+    font-weight: bold;
+    height: 25px;
+    margin: 0px;
+}

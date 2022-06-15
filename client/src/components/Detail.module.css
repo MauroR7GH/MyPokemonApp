@@ -1,0 +1,72 @@
+.detailDiv {
+    background-image: url("../img/detail.jpg");
+    background-size: 100vw 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn {
+    color: #dc5050;
+    background-color: white;
+    font-size: 30px;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #dc5050;
+    position: fixed;
+    top: 20px;
+    left: 600px;
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+    font-size: 33px;
+}
+.oneData {
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #dc5050;
+    box-shadow: 5px 5px 5px 5px #dc5050;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 30px;
+    top: 85px;
+}
+.twoData {
+    background-color: white;
+    color: #dc5050;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #dc5050;
+    box-shadow: 5px 5px 5px 5px #dc5050;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 200px;
+    top: 135px;
+    width: 160px;
+}
+.name {
+    color: #dc5050;
+}
+.img {
+    height: 400px;
+    width: 400px;
+}
+.waiting {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #dc5050;
+    font-size: 50px;
+    height: 80px;
+    width: 700px;
+    color: #dc5050;
+    position: fixed;
+    top: 210px;
+}

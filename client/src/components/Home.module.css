@@ -1,0 +1,154 @@
+.homeDiv {
+    background-image: url("../img/home.jpg");
+    background-size: 100vw 100vh;
+    height: 100vh;
+}
+
+.headerDiv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+}
+.findPokemon {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+}
+.findInput {
+    height: 35px;
+    width: 100px;
+    border-radius: 20px;
+    border: 2px solid #dc5050;
+    text-align: center;
+    padding: 0px;
+    margin: 1px;
+}
+.findBtn {
+    color: white;
+    background-color: #dc5050;
+    border-radius: 20px;
+    border: 2px solid #dc2525;
+    font-weight: bold;
+    font-size: 15px;
+    height: 35px;
+    width: 70px;
+    padding: 0px;
+    margin: 1px;
+}
+.findBtn:hover {
+    cursor: pointer;
+    background-color: #dc2525;
+    font-size: 17px;
+}
+.createLink {
+    text-decoration: none;
+    position: relative;
+    left: 70%;
+}
+.createBtn {
+    color: white;
+    background-color: #dc5050;
+    border-radius: 20px;
+    border: 2px solid #dc2525;
+    font-weight: bold;
+    height: 35px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 1px;
+}
+.createBtn:hover {
+    cursor: pointer;
+    background-color: #dc2525;
+    font-size: 14px;
+}
+
+.filtersDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.filtersDivision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.filtersText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #dc5050;
+    border-radius: 20px;
+    border: 2px solid white;
+    height: 35px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 1px;
+    margin-top: 3px;
+}
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dc5050;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid #dc2525;
+    height: 35px;
+    font-size: 15px;
+    margin-bottom: 1px;
+    margin-top: 3px;
+}
+.removeSorts {
+    background-color: #dc5050;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid #dc2525;
+    height: 35px;
+    width: 140px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0px;
+    margin-bottom: 5px;
+}
+.removeSorts:hover {
+    cursor: pointer;
+    background-color: #dc2525;
+    font-size: 16px;
+}
+
+.cardsDiv {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 420px;
+    margin-top: 15px;
+}
+.cardDiv {
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 180px;
+}
+.cardLink {
+    text-decoration: none;
+}
+
+.waiting {
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #dc5050;
+    font-size: 50px;
+    height: 80px;
+    width: 670px;
+    color: #dc5050;
+    position: fixed;
+    top: 210px;
+}

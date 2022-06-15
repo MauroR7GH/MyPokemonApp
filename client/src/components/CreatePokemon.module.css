@@ -1,0 +1,108 @@
+.createDiv {
+    background-image: url("../img/create.jpg");
+    background-size: 100vw 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 80px;
+    border-radius: 10px;
+    width: 650px;
+}
+.title {
+    background-color: white;
+    color: #dc5050;
+    height: 35px;
+    width: 450px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.inputBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    color: #dc5050;
+    font-size: medium;
+    height: 30px;
+    width: 600px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid #dc5050;
+}
+.label {
+    position: absolute;
+    left: 30px;
+}
+.input {
+    position: absolute;
+    left: 210px;
+}
+.description {
+    color: #dc2525;
+    font-size: smaller;
+    position: absolute;
+    left: 400px;
+}
+.oneBtn {
+    color: white;
+    background-color: #dc5050;
+    font-size: 30px;
+    height: 50px;
+    width: 220px;
+    border-radius: 10px;
+    border: 2px solid #dc2525;
+    position: fixed;
+    top: 10px;
+    left: 42%;
+}
+.oneBtn:hover {
+    cursor: pointer;
+    background-color: #dc2525;
+    font-size: 32px;
+}
+.twoBtn {
+    color: white;
+    background-color: #dc5050;
+    font-size: 20px;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #dc2525;
+    position: relative;
+    top: 7px;
+}
+.twoBtn:hover {
+    cursor: pointer;
+    background-color: #dc2525;
+    font-size: 22px;
+}
+.types {
+    display: flex;
+    justify-content: center;
+    height: 25px;
+}
+.eachType {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #dc5050;
+    width: 80px;
+}
+.delete {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    border-radius: 10px;
+    border: 2px solid #dc5050;
+    cursor: pointer;
+}
