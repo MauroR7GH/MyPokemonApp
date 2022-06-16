@@ -1,13 +1,22 @@
 .div {
     border-radius: 15px;
-    border: 2px solid #dc5050;
-    background-color: white;
+    border: 2px solid white;
+    /* backdrop-filter: blur(2px); */
+    /* backdrop-filter: brightness(60%); */
+    backdrop-filter: contrast(25%);
+    /* backdrop-filter: drop-shadow(4px 4px 10px blue); */
+    /* backdrop-filter: grayscale(30%); */
+    /* backdrop-filter: hue-rotate(120deg); */
+    /* backdrop-filter: invert(70%); */
+    /* backdrop-filter: opacity(20%); */
+    /* backdrop-filter: sepia(90%); */
+    /* backdrop-filter: saturate(80%); */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .name {
-    color: #dc5050;
+    color: white;
     height: 15px;
     margin: 0px;
 }
@@ -16,7 +25,7 @@
     width: 155px;
 }
 .types {
-    color: #dc5050;
+    color: white;
     font-weight: bold;
     height: 25px;
     margin: 0px;

@@ -25,48 +25,46 @@
     font-size: 33px;
 }
 .oneData {
-    background-color: white;
+    backdrop-filter: contrast(25%);
     border-radius: 20px;
-    border: 2px solid #dc5050;
-    box-shadow: 5px 5px 5px 5px #dc5050;
+    border: 2px solid white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    left: 30px;
+    left: 70px;
     top: 85px;
 }
 .twoData {
-    background-color: white;
-    color: #dc5050;
+    backdrop-filter: contrast(25%);
+    color: white;
     font-size: medium;
     font-weight: bold;
     border-radius: 10px;
-    border: 2px solid #dc5050;
-    box-shadow: 5px 5px 5px 5px #dc5050;
+    border: 2px solid white;
     display: flex;
     flex-direction: column;
     position: fixed;
     right: 200px;
-    top: 135px;
+    top: 150px;
     width: 160px;
 }
 .name {
-    color: #dc5050;
+    color: white;
 }
 .img {
     height: 400px;
     width: 400px;
 }
 .waiting {
-    background-color: white;
+    backdrop-filter: contrast(25%);
     border-radius: 10px;
-    border: 2px solid #dc5050;
+    border: 2px solid white;
     font-size: 50px;
     height: 80px;
     width: 700px;
-    color: #dc5050;
+    color: white;
     position: fixed;
     top: 210px;
 }

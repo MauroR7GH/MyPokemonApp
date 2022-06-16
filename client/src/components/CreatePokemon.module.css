@@ -28,14 +28,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: white;
-    color: #dc5050;
+    backdrop-filter: contrast(25%);
+    color: white;
     font-size: medium;
     height: 30px;
     width: 600px;
     margin: 5px;
     border-radius: 10px;
-    border: 2px solid #dc5050;
+    border: 2px solid white;
 }
 .label {
     position: absolute;
@@ -46,7 +46,7 @@
     left: 210px;
 }
 .description {
-    color: #dc2525;
+    color: white;
     font-size: smaller;
     position: absolute;
     left: 400px;
@@ -93,16 +93,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    backdrop-filter: contrast(25%);
+    color: white;
     border-radius: 10px;
-    border: 2px solid #dc5050;
+    border: 2px solid white;
     width: 80px;
 }
 .delete {
     display: flex;
     justify-content: center;
     width: 30px;
+    color: white;
+    background-color: transparent;
     border-radius: 10px;
-    border: 2px solid #dc5050;
+    border: 2px solid white;
     cursor: pointer;
 }
