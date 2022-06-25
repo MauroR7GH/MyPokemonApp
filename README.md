@@ -15,6 +15,10 @@
 <img src='./client/src/img/Details.png' width='350px' align='left'/>
 <img src='./client/src/img/Create.png' width='350px' align='center'/>
 
+## Podes probar la app con el siguiente link
+
+- 🌎 Deploy: https://pokemon-app-henna.vercel.app/
+
 ## Comenzando
 
  1. Forkear el repositorio para tener una copia del mismo en sus cuentas
@@ -71,10 +75,10 @@ __IMPORTANTE__: Para las funcionalidades de filtrado y ordenamiento NO se utiliz
 __IMPORTANTE__: Para aplicar estilos a la aplicación se utilizo CSS Modules.
 
 #### Tecnologías necesarias:
-- [ ] React
-- [ ] Redux Toolkit
-- [ ] Express
-- [ ] Sequelize - Postgres
+- React
+- Redux Toolkit
+- Express
+- Sequelize - Postgres
 
 ## Frontend
 
