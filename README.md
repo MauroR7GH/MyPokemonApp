@@ -4,6 +4,10 @@
   <img height="150" src="./pokemon.png" />
 </p>
 
+## Podes probar la app con el siguiente link
+
+- 🌎 Deploy: https://pokemon-app-henna.vercel.app/
+
 ## Objetivos del Proyecto y algunas imagenes
 
 - Construir una App utlizando React, Redux, Node y Sequelize.
@@ -14,10 +18,6 @@
 <img src='./client/src/img/Home.png' width='350px' align='center'/>
 <img src='./client/src/img/Details.png' width='350px' align='left'/>
 <img src='./client/src/img/Create.png' width='350px' align='center'/>
-
-## Podes probar la app con el siguiente link
-
-- 🌎 Deploy: https://pokemon-app-henna.vercel.app/
 
 ## Comenzando
 
@@ -47,6 +47,7 @@ En `server` crear un archivo llamado: `.env` que tenga la siguiente forma:
 DB_USER=usuariodepostgres
 DB_PASSWORD=passwordDePostgres
 DB_HOST=localhost
+PORT=3001
 ```
 
 Reemplazar `usuariodepostgres` y `passwordDePostgres` con tus propias credenciales para conectarte a postgres.

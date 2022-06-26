@@ -19,10 +19,11 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js');
 const { sequelize } = require('./src/db.js');
+const { PORT } = process.env
 
 // Syncing all the models at once.
 sequelize.sync({ force: true }).then(() => {
-  server.listen(3001, () => {
-    console.log('Listening at port 3001'); // eslint-disable-line no-console
+  server.listen(PORT, () => {
+    console.log(`Listening at port ${PORT}`); // eslint-disable-line no-console
   });
 });
