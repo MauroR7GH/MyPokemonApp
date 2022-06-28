@@ -6,7 +6,7 @@
 
 ## Podes probar la app con el siguiente link
 
-- 🌎 Deploy: https://pokemon-app-henna.vercel.app/
+- 🌎 Deploy: https://pokemon-app-henna.vercel.app
 
 ## Objetivos del Proyecto y algunas imagenes
 
