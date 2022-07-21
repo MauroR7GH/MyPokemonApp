@@ -39,7 +39,7 @@ export default function Detail () {
                             <h4 className={styles.name}>Type: {!pokemonDetails[0].createdByForm ? pokemonDetails[0].types.map (t => services.mayusc (t) + ' ') :
                                 pokemonDetails[0].types.map (t => services.mayusc (t.name) + ' ')}</h4>
                         </div>
-                    </div> : <p className={styles.waiting}>Wait for a moment please...</p>
+                    </div> : <p className={styles.waiting}>Wait a moment please...</p>
             }
         </div>
     )

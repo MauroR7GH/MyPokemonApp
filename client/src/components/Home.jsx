@@ -126,7 +126,7 @@ export default function Home () {
                         return <div key={p.id} className={styles.cardDiv}>
                                    <Link to={`/pokemons/${p.id}`} className={styles.cardLink}><Card name={p.name} img={p.img} types={p.types}/></Link>
                                </div>
-                    }) : <p className={styles.waiting}>Wait for a moment please...</p>
+                    }) : <p className={styles.waiting}>Wait a moment please...</p>
                 }
             </div>
             <Pages pokemons={pokemons.length} pokemonsPerPage={pokemonsPerPage} pages={pages}/>

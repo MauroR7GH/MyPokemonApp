@@ -35,7 +35,7 @@ class PokemonService {
         return pokemons
     }
     async getDBPokemon () {
-        const pokemons = await Pokemon.findAll ({
+        let pokemons = await Pokemon.findAll ({
             include: {
                 model: Type,
                 attributes: ['name'],
@@ -45,6 +45,14 @@ class PokemonService {
             }
             //// Respetar la sintaxis en el include, para traer solo lo que se necesita. En este caso, el name de los types de pokemon.
         })
+        pokemons = pokemons.map (p => {
+            const eachOne = p.toJSON ()
+            return {
+                ...eachOne,
+                types: eachOne.types.map (t => t.name)
+            }
+        })
+        //// Conseguimos de esta manera cambiar la propiedad types de cada objeto pokemon en el arreglo.
         return pokemons
     }
     async getAll () {
