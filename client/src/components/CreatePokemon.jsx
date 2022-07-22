@@ -77,7 +77,7 @@ export default function CreatePokemon () {
         }
     }
 
-    let typeKey = 0
+    let key = 0
 
     return (
         <div className={styles.createDiv}>
@@ -131,7 +131,7 @@ export default function CreatePokemon () {
                             <option value='types'>Type</option>
                             {
                                 types.map (t => (
-                                    <option value={t.name} key={typeKey++}>{t.name}</option>
+                                    <option value={t.name} key={t.id}>{services.mayusc (t.name)}</option>
                                 ))
                             }
                         </select>
@@ -141,7 +141,7 @@ export default function CreatePokemon () {
                         <ul className={styles.types}>
                             {
                                 input.types.map (t => (
-                                    <div className={styles.eachType} key={typeKey++}>{t}<button className={styles.delete} type='button' onClick={() => handlerDeleteType (t)}>X</button></div>
+                                    <div className={styles.eachType} key={key++}>{services.mayusc (t)}<button className={styles.delete} type='button' onClick={() => handlerDeleteType (t)}>X</button></div>
                                 ))
                             }
                         </ul>

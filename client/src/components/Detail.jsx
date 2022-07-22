@@ -36,8 +36,7 @@ export default function Detail () {
                             <p>Speed: {pokemonDetails[0].speed} pts.</p>
                             <p>Height: {pokemonDetails[0].height} ft.</p>
                             <p>Weight: {pokemonDetails[0].weight} lb.</p>
-                            <h4 className={styles.name}>Type: {!pokemonDetails[0].createdByForm ? pokemonDetails[0].types.map (t => services.mayusc (t) + ' ') :
-                                pokemonDetails[0].types.map (t => services.mayusc (t.name) + ' ')}</h4>
+                            <h4 className={styles.name}>Type: {pokemonDetails[0].types.map (t => services.mayusc (t) + ' ')}</h4>
                         </div>
                     </div> : <p className={styles.waiting}>Wait a moment please...</p>
             }

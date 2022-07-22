@@ -1,27 +1,24 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getPokemons, filterByType, apiOrDB, orderByName, orderByAttack, getPokemonByName } from '../redux/pokemon.slice'
+import { getPokemons, getTypes, filterByType, apiOrDB, orderByName, orderByAttack, getPokemonByName } from '../redux/pokemon.slice'
 import { Link } from 'react-router-dom'
 import Card from './Card'
 import Pages from './Pages'
 import styles from './Home.module.css'
+import Services from '../services/services'
+const services = new Services ()
 
 export default function Home () {
     const dispatch = useDispatch ()
     const pokemons = useSelector (state => state.pokemon.pokemons)
-
-    // useEffect (() => {
-    //     dispatch (getPokemons ())
-    // }, [dispatch])
+    const types = useSelector (state => state.pokemon.types)
 
     const [currentPage, setCurrentPage] = useState (1)
     const pokemonsPerPage = 12
     const indexLastPokemon = currentPage * pokemonsPerPage
     const indexFirstPokemon = indexLastPokemon - pokemonsPerPage
     const currentPokemons = pokemons.slice (indexFirstPokemon, indexLastPokemon)
-
-    // const [render, setRender] = useState ('')
 
     const pages = pageNumber => {
         setCurrentPage (pageNumber)
@@ -31,6 +28,7 @@ export default function Home () {
 
     useEffect (() => {
         dispatch (getPokemons ())
+        dispatch (getTypes ())
     }, [dispatch])
 
     //// Handlers a usar.
@@ -53,13 +51,11 @@ export default function Home () {
         e.preventDefault ()
         dispatch (orderByName (e.target.value))
         setCurrentPage (1)
-        // setRender (e.target.value)
     }
     function handlerSortAttack (e) {
         e.preventDefault ()
         dispatch (orderByAttack (e.target.value))
         setCurrentPage (1)
-        // setRender (e.target.value)
     }
     function handlerInputChange (e) {
         e.preventDefault ()
@@ -88,16 +84,11 @@ export default function Home () {
                 <p className={styles.filtersText}>You can filter them by...</p>
                 <select onChange={e => handlerFilterType (e)} className={styles.filters}>
                     <option value='all'>All</option>
-                    <option value='grass'>Grass</option>
-                    <option value='poison'>Poison</option>
-                    <option value='fire'>Fire</option>
-                    <option value='flying'>Flying</option>
-                    <option value='water'>Water</option>
-                    <option value='bug'>Bug</option>
-                    <option value='normal'>Normal</option>
-                    <option value='electric'>Electric</option>
-                    <option value='ground'>Ground</option>
-                    <option value='fairy'>Fairy</option>
+                    {
+                        types.map (t => (
+                            <option value={t.name} key={t.id}>{services.mayusc (t.name)}</option>
+                        ))
+                    }
                 </select>
                 <select onChange={e => handlerFilterApiOrDB (e)} className={styles.filters}>
                     <option value='all'>All</option>
